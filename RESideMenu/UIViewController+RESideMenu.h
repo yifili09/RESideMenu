@@ -1,5 +1,5 @@
 //
-// UIWindow+RESideMenuExtensions.h
+//  UIViewController+RESideMenu.h
 // RESideMenu
 //
 // Copyright (c) 2013 Roman Efimov (https://github.com/romaonthego)
@@ -24,10 +24,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
+#import "RESideMenu.h"
 
-@interface UIWindow (RESideMenuExtensions)
+@interface UIViewController (RESideMenu)
 
-- (UIImage *)re_snapshotWithStatusBar:(BOOL)withStatusBar;
+@property(nonatomic,readonly,retain) RESideMenu *sideMenu;
 
 @end

@@ -41,7 +41,7 @@ Edit your Podfile and add RESideMenu:
 
 ``` bash
 platform :ios, '6.0'
-pod 'RESideMenu', '~> 1.1.1'
+pod 'RESideMenu', '~> 2.0.2'
 ```
 
 Install into your Xcode project:
@@ -72,9 +72,9 @@ RESideMenuItem *homeItem = [[RESideMenuItem alloc] initWithTitle:@"Home" action:
     secondViewController.title = item.title;
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:secondViewController];
 
-    // Use setRootViewController to switch between view controllers
+    // Use displayContentController to switch between view controllers
     //
-    [menu setRootViewController:navigationController];
+    [menu displayContentController:navigationController];
 }];
 RESideMenuItem *exploreItem = [[RESideMenuItem alloc] initWithTitle:@"Explore" action:^(RESideMenu *menu, RESideMenuItem *item) {
     [menu hide];
@@ -98,6 +98,12 @@ You can customize the following properties of `RESideMenu`:
 @property (strong, readwrite, nonatomic) UIImage *backgroundImage;
 @property (assign, readwrite, nonatomic) BOOL hideStatusBarArea;
 ```
+
+## Contributors
+
+Sam Oakley ([@blork](https://github.com/blork))<br />
+Alexis Creuzot ([@kirualex](https://github.com/kirualex))<br />
+Marc Chambers ([@mchambers](https://github.com/mchambers))
 
 ## Contact
 
